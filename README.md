@@ -10,4 +10,4 @@ pip install pandas
 
 pip install tabulate
 
-그리고, 다운받은 샘프로 코드 실행!
+그리고, 다운받은 파이썬 코드 실행!
