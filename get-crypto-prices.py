@@ -148,7 +148,8 @@ def get_crypto_prices_df():
         "BTC": {"upbit": "KRW-BTC", "korbit": "btc", "binance": "BTC", "okx": "BTC", "bithumb": "BTC"},
         "SOL": {"upbit": "KRW-SOL", "korbit": "sol", "binance": "SOL", "okx": "SOL", "bithumb": "SOL"},
         "ETH": {"upbit": "KRW-ETH", "korbit": "eth", "binance": "ETH", "okx": "ETH", "bithumb": "ETH"},
-        "FLR": {"upbit": "KRW-FLR", "korbit": "flr", "binance": "FLR", "okx": "FLR", "bithumb": "FLR"}
+        "FLR": {"upbit": "KRW-FLR", "korbit": "flr", "binance": "FLR", "okx": "FLR", "bithumb": "FLR"},
+        "JUP": {"upbit": "KRW-JUP", "korbit": "jup", "binance": "JUP", "okx": "JUP", "bithumb": "JUP"},
     }
     
     data = []  # 가격 데이터를 저장할 리스트
