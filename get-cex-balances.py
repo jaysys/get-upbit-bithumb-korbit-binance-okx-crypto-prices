@@ -15,7 +15,6 @@ load_dotenv()
 #okx
 
 
-
 def main():
     # Access the environment variables
     secret_key = os.getenv("SECRET_KEY")
