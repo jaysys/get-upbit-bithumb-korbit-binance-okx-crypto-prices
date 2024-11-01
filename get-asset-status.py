@@ -92,15 +92,15 @@ def main():
         ["Ethereum", checker.format_address(checker.eth_address), 
          f"{eth_balance:.4f} ETH",
          f"${eth_balance * prices.get('ethereum', {}).get('usd', 0):,.2f}" if prices else "N/A",
-         "✅" if eth_balance > 0 else "❌"],
+         "v" if eth_balance > 0 else "x"],
         ["Solana", checker.format_address(checker.sol_address), 
          f"{sol_balance:.4f} SOL",
          f"${sol_balance * prices.get('solana', {}).get('usd', 0):,.2f}" if prices else "N/A",
-         "✅" if sol_balance > 0 else "❌"],
+         "v" if sol_balance > 0 else "x"],
         ["Flare", checker.format_address(checker.flare_address), 
          f"{flare_balance:.4f} FLR",
          f"${flare_balance * prices.get('flare-networks', {}).get('usd', 0):,.2f}" if prices else "N/A",  # 수정
-         "✅" if flare_balance > 0 else "❌"]
+         "v" if flare_balance > 0 else "x"]
     ]
     
     # Price table data
@@ -108,7 +108,7 @@ def main():
     price_data = [
         ["ETH/USD", f"${prices.get('ethereum', {}).get('usd', 0):.2f}" if prices else "N/A"],
         ["SOL/USD", f"${prices.get('solana', {}).get('usd', 0):.2f}" if prices else "N/A"],
-        ["FLR/USD", f"${prices.get('flare-networks', {}).get('usd', 0):.2f}" if prices else "N/A"]  # 수정
+        ["FLR/USD", f"${prices.get('flare-networks', {}).get('usd', 0):.4f}" if prices else "N/A"]  # 수정
     ]
     
     # Print formatted tables
